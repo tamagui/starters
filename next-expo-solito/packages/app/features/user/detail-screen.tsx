@@ -1,6 +1,6 @@
-import { View, Text } from 'dripsy'
 import { createParam } from 'solito'
 import { TextLink } from 'solito/link'
+import { Paragraph, YStack } from 'tamagui'
 
 const { useParam } = createParam<{ id: string }>()
 
@@ -8,12 +8,9 @@ export function UserDetailScreen() {
   const [id] = useParam('id')
 
   return (
-    <View sx={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text
-        sx={{ textAlign: 'center', mb: 16, fontWeight: 'bold' }}
-      >{`User ID: ${id}`}</Text>
-
+    <YStack f={1} jc="center" ai="center" space>
+      <Paragraph ta="center" fow="800">{`User ID: ${id}`}</Paragraph>
       <TextLink href="/">👈 Go Home</TextLink>
-    </View>
+    </YStack>
   )
 }

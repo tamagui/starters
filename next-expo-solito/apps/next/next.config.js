@@ -9,10 +9,11 @@ process.env.TAMAGUI_TARGET = 'web'
 
 const disableExtraction = process.env.NODE_ENV === 'development'
 
+
 const transform = withPlugins(
   [
-    withTM(['solito', 'app']),
-    [withExpo, { projectRoot: __dirname }],
+    withTM(['solito', 'app', 'react-native-web', '@expo/next-adapter', 'expo-linking', 'expo-constants', 'expo-modules-core']),
+    // [withExpo, { projectRoot: __dirname }],
     withTamagui({
       config: './tamagui.config.ts',
       components: ['tamagui'],
@@ -64,6 +65,7 @@ const transform = withPlugins(
 )
 
 module.exports = function (name, { defaultConfig }) {
+  defaultConfig.webpack5 = true
   // defaultConfig.experimental.reactRoot = 'concurrent'
   defaultConfig.typescript.ignoreBuildErrors = true
   return transform(name, { defaultConfig })

@@ -1,10 +1,10 @@
-import { Dripsy } from './dripsy'
+import Tamagui from '../tamagui.config'
 import { NavigationProvider } from './navigation'
 
 export function Provider({ children }: { children: React.ReactNode }) {
   return (
     <NavigationProvider>
-      <Dripsy>{children}</Dripsy>
+      <Tamagui.Provider>{children}</Tamagui.Provider>
     </NavigationProvider>
   )
 }

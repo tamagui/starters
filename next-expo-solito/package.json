@@ -5,43 +5,22 @@
     "apps/*",
     "packages/*"
   ],
-  "devDependencies": {
-    "@types/react": "^17.0.39",
-    "@types/react-native": "^0.67.2",
-    "eslint": "^8.11.0",
-    "turbo": "^1.1.6",
-    "typescript": "^4.6.2"
-  },
   "scripts": {
     "native": "cd apps/expo && expo start",
     "web": "cd apps/next && yarn next"
   },
   "resolutions": {
-    "@tamagui/animate-presence": "portal:/Users/n8/tamagui/packages/animate-presence",
-    "@tamagui/animations-css": "portal:/Users/n8/tamagui/packages/animations-css",
-    "@tamagui/animations-motion": "portal:/Users/n8/tamagui/packages/animations-motion",
-    "@tamagui/animations-reanimated": "portal:/Users/n8/tamagui/packages/animations-reanimated",
-    "@tamagui/babel-plugin": "portal:/Users/n8/tamagui/packages/babel-plugin",
-    "@tamagui/build": "portal:/Users/n8/tamagui/packages/build",
-    "@tamagui/colors": "portal:/Users/n8/tamagui/packages/colors",
-    "@tamagui/core": "portal:/Users/n8/tamagui/packages/core",
-    "@tamagui/core-node": "portal:/Users/n8/tamagui/packages/core-node",
-    "create-tamagui-app": "portal:/Users/n8/tamagui/packages/create-tamagui-app",
-    "@tamagui/drawer": "portal:/Users/n8/tamagui/packages/drawer",
-    "@tamagui/fake-react-native": "portal:/Users/n8/tamagui/packages/fake-react-native",
-    "@tamagui/feather-icons": "portal:/Users/n8/tamagui/packages/feather-icons",
-    "@tamagui/helpers": "portal:/Users/n8/tamagui/packages/helpers",
-    "tamagui-loader": "portal:/Users/n8/tamagui/packages/loader",
-    "@tamagui/menu": "portal:/Users/n8/tamagui/packages/menu",
-    "@tamagui/next-plugin": "portal:/Users/n8/tamagui/packages/next-plugin",
-    "@tamagui/polyfill-dev": "portal:/Users/n8/tamagui/packages/polyfill-dev",
-    "@tamagui/proxy-worm": "portal:/Users/n8/tamagui/packages/proxy-worm",
-    "@tamagui/shorthands": "portal:/Users/n8/tamagui/packages/shorthands",
-    "@tamagui/static": "portal:/Users/n8/tamagui/packages/static",
-    "tamagui": "portal:/Users/n8/tamagui/packages/tamagui",
-    "@tamagui/theme-base": "portal:/Users/n8/tamagui/packages/theme-base",
-    "@tamagui/use-debounce": "portal:/Users/n8/tamagui/packages/use-debounce",
-    "@tamagui/use-force-update": "portal:/Users/n8/tamagui/packages/use-force-update",
-    "@tamagui/use-window-size": "portal:/Users/n8/tamagui/packages/use-window-size"
+    "react": "18.0.0-beta-f320ef88f-20211116",
+    "react-dom": "18.0.0-beta-f320ef88f-20211116",
+    "react-refresh": "0.11.0",
+    "react-native-web": "0.17.5"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.39",
+    "@types/react-native": "^0.67.2",
+    "eslint": "^8.11.0",
+    "prettier": "^2.6.2",
+    "turbo": "^1.1.6",
+    "typescript": "^4.6.3"
   }
 }
