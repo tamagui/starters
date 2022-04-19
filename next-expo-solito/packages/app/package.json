@@ -5,9 +5,13 @@
   "dependencies": {
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.0",
+    "@tamagui/animations-reanimated": "1.0.0-beta.189",
+    "@tamagui/colors": "1.0.0-beta.189",
+    "@tamagui/shorthands": "1.0.0-beta.189",
+    "@tamagui/theme-base": "1.0.0-beta.189",
     "expo-linking": "^3.0.0",
     "solito": "0.0.22",
-    "tamagui": "1.0.0-beta.179"
+    "tamagui": "1.0.0-beta.189"
   },
   "sideEffects": false
 }

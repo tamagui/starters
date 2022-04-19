@@ -7,7 +7,8 @@
   ],
   "scripts": {
     "native": "cd apps/expo && expo start",
-    "web": "cd apps/next && yarn next"
+    "web": "cd apps/next && yarn next",
+    "upgrade:tamagui": "manypkg upgrade tamagui canary && manypkg upgrade @tamagui canary && manypkg upgrade tamagui-loader canary"
   },
   "resolutions": {
     "react": "18.0.0-beta-f320ef88f-20211116",
@@ -16,6 +17,7 @@
     "react-native-web": "0.17.5"
   },
   "devDependencies": {
+    "@manypkg/cli": "^0.19.1",
     "@types/react": "^17.0.39",
     "@types/react-native": "^0.67.2",
     "eslint": "^8.11.0",
