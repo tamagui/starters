@@ -9,6 +9,7 @@
     "@tamagui/colors": "1.0.0-beta.189",
     "@tamagui/shorthands": "1.0.0-beta.189",
     "@tamagui/theme-base": "1.0.0-beta.189",
+    "@tamagui/font-inter": "1.0.0-beta.189",
     "expo-linking": "^3.0.0",
     "solito": "0.0.22",
     "tamagui": "1.0.0-beta.189"

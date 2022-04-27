@@ -1,6 +1,8 @@
 /node_modules
 .yarn/cache
 
+/.expo/
+
 # next.js
 /.next/
 /out/

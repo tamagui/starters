@@ -1,5 +1,5 @@
 import { TextLink } from 'solito/link'
-import { A, H1, Paragraph, XStack, YStack } from 'tamagui'
+import { Anchor, H1, Paragraph, XStack, YStack } from 'tamagui'
 
 export function HomeScreen() {
   return (
@@ -19,13 +19,13 @@ export function HomeScreen() {
         </Paragraph>
         <Paragraph ta="center">
           Tamagui is made by{' '}
-          <A
+          <Anchor
             href="https://twitter.com/natebirdman"
             target="_blank"
             rel="noreferrer"
           >
             Nate Wienert
-          </A>
+          </Anchor>
           .
         </Paragraph>
       </YStack>

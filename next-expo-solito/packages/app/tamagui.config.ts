@@ -1,15 +1,28 @@
 import { shorthands } from '@tamagui/shorthands'
-import { themes, tokens } from '@tamagui/theme-base'
-import { createTamagui } from 'tamagui'
+import { color, radius, size, space, themes, zIndex } from '@tamagui/theme-base'
+import { createTamagui, createTokens } from 'tamagui'
+import { createInterFont } from '@tamagui/font-inter'
 
 import { animations } from './constants/animations'
+
+const interFont = createInterFont()
 
 const config = createTamagui({
   animations,
   defaultTheme: 'light',
   shorthands,
   themes,
-  tokens,
+  tokens: createTokens({
+    font: {
+      title: interFont,
+      body: interFont,
+    },
+    size,
+    space,
+    zIndex,
+    color,
+    radius,
+  }),
   media: {
     xs: { maxWidth: 660 },
     sm: { maxWidth: 800 },

@@ -20,6 +20,8 @@ cp -r ~/tamagui/packages/core ./node_modules/@tamagui
 cp -r ~/tamagui/packages/core-node ./node_modules/@tamagui
 cp -r ~/tamagui/packages/static ./node_modules/@tamagui
 cp -r ~/tamagui/packages/fake-react-native ./node_modules/@tamagui
+cp -r ~/tamagui/packages/font-inter ./node_modules/@tamagui
+cp -r ~/tamagui/packages/theme-base ./node_modules/@tamagui
 
 # copy (but dont overwrite) others
 cp -r -n ~/tamagui/node_modules/* ./node_modules/
