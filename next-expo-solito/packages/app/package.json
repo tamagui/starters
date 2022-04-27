@@ -3,16 +3,16 @@
   "name": "app",
   "main": "index.ts",
   "dependencies": {
-    "@react-navigation/native": "^6.0.8",
-    "@react-navigation/native-stack": "^6.5.0",
-    "@tamagui/animations-reanimated": "1.0.0-beta.189",
-    "@tamagui/colors": "1.0.0-beta.189",
-    "@tamagui/shorthands": "1.0.0-beta.189",
-    "@tamagui/theme-base": "1.0.0-beta.189",
-    "@tamagui/font-inter": "1.0.0-beta.189",
+    "@react-navigation/native": "^6.0.10",
+    "@react-navigation/native-stack": "^6.6.2",
+    "@tamagui/animations-reanimated": "1.0.0-beta.205",
+    "@tamagui/colors": "1.0.0-beta.205",
+    "@tamagui/shorthands": "1.0.0-beta.205",
+    "@tamagui/theme-base": "1.0.0-beta.205",
+    "@tamagui/font-inter": "1.0.0-beta.205",
     "expo-linking": "^3.0.0",
-    "solito": "0.0.22",
-    "tamagui": "1.0.0-beta.189"
+    "solito": "^0.0.25",
+    "tamagui": "1.0.0-beta.205"
   },
   "sideEffects": false
 }
