@@ -1,10 +1,8 @@
-# Blank Solito Example Monorepo 🕴
+# Tamagui + Solito + Next + Expo Monorepo
 
 ```sh
 npx create-tamagui-app@latest my-app
 ```
-
-👾 [View the website](https://example.solito.dev)
 
 ## ⚡️ Instant clone & deploy
 
