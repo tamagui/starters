@@ -1,3 +1,4 @@
+import React from 'react'
 import { createParam } from 'solito'
 import { TextLink } from 'solito/link'
 import { Paragraph, YStack } from 'tamagui'

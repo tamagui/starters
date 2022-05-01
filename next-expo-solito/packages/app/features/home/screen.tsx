@@ -1,3 +1,6 @@
+import { Drawer } from '@tamagui/drawer'
+import { ChevronDown, ChevronUp } from '@tamagui/feather-icons'
+import React, { useState } from 'react'
 import { useLink } from 'solito/link'
 import { Anchor, Button, H1, Paragraph, XStack, YStack } from 'tamagui'
 
@@ -7,7 +10,7 @@ export function HomeScreen() {
   })
 
   return (
-    <YStack debug f={1} jc="center" ai="center" p="$4" space>
+    <YStack debug="verbose" f={1} jc="center" ai="center" p="$4" space>
       <H1 ta="center">Welcome to Tamagui.</H1>
       <YStack maw={600}>
         <Paragraph ta="center">
@@ -23,10 +26,35 @@ export function HomeScreen() {
         </Paragraph>
       </YStack>
       <XStack>
-        <Button {...linkProps} debug>
-          Link to user
-        </Button>
+        <Button {...linkProps}>Link to user</Button>
       </XStack>
+
+      <DrawerDemo />
     </YStack>
+  )
+}
+
+export default function DrawerDemo() {
+  const [show, setShow] = useState(false)
+  return (
+    <>
+        <Button
+          size="$6"
+          icon={show ? ChevronDown : ChevronUp}
+          circular
+          onPress={() => setShow((x) => !x)}
+        />
+        <Drawer open={show} onChange={setShow}>
+          <YStack ai="center" jc="center" p="$6" space>
+            <Paragraph selectable={false}>Hello.</Paragraph>
+            <Button
+              size="$6"
+              icon={show ? ChevronDown : ChevronUp}
+              circular
+              onPress={() => setShow((x) => !x)}
+            />
+          </YStack>
+        </Drawer>
+    </>
   )
 }

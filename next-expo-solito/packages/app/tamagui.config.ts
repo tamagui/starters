@@ -11,12 +11,12 @@ const config = createTamagui({
   animations,
   defaultTheme: 'light',
   shorthands,
+  fonts: {
+    title: interFont,
+    body: interFont,
+  },
   themes,
   tokens: createTokens({
-    font: {
-      title: interFont,
-      body: interFont,
-    },
     size,
     space,
     zIndex,

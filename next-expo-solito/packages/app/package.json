@@ -8,6 +8,8 @@
     "@tamagui/animations-reanimated": "1.0.0-beta.205",
     "@tamagui/colors": "1.0.0-beta.205",
     "@tamagui/shorthands": "1.0.0-beta.205",
+    "@tamagui/feather-icons": "1.0.0-beta.205",
+    "@tamagui/drawer": "1.0.0-beta.205",
     "@tamagui/theme-base": "1.0.0-beta.205",
     "@tamagui/font-inter": "1.0.0-beta.205",
     "expo-linking": "^3.0.0",
