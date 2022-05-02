@@ -17,7 +17,7 @@
     "react-native-web": "0.17.1"
   },
   "devDependencies": {
-    "@tamagui/babel-plugin": "^1.0.0-beta.205",
+    "@tamagui/babel-plugin": "1.0.0-beta.0.204",
     "@babel/core": "^7.17.9",
     "@expo/metro-config": "^0.3.14",
     "@types/react": "~17.0.21",

@@ -5,16 +5,16 @@
   "dependencies": {
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/native-stack": "^6.6.2",
-    "@tamagui/animations-reanimated": "1.0.0-beta.205",
-    "@tamagui/colors": "1.0.0-beta.205",
-    "@tamagui/shorthands": "1.0.0-beta.205",
-    "@tamagui/feather-icons": "1.0.0-beta.205",
-    "@tamagui/drawer": "1.0.0-beta.205",
-    "@tamagui/theme-base": "1.0.0-beta.205",
-    "@tamagui/font-inter": "1.0.0-beta.205",
+    "@tamagui/animations-reanimated": "1.0.0-beta.0.204",
+    "@tamagui/colors": "1.0.0-beta.0.204",
+    "@tamagui/shorthands": "1.0.0-beta.0.204",
+    "@tamagui/feather-icons": "1.0.0-beta.0.204",
+    "@tamagui/drawer": "1.0.0-beta.0.204",
+    "@tamagui/theme-base": "1.0.0-beta.0.204",
+    "@tamagui/font-inter": "1.0.0-beta.0.204",
     "expo-linking": "^3.0.0",
     "solito": "^0.0.25",
-    "tamagui": "1.0.0-beta.205"
+    "tamagui": "1.0.0-beta.0.204"
   },
   "sideEffects": false
 }

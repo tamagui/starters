@@ -1,20 +1,21 @@
 import { style } from '@expo/next-adapter/document'
 import NextDocument, { Head, Html, Main, NextScript } from 'next/document'
 import { Children } from 'react'
-import { AppRegistry } from 'react-native';
+import { AppRegistry } from 'react-native'
 
 import Tamagui from '../tamagui.config'
 
 export default class Document extends NextDocument {
   static async getInitialProps({ renderPage }: any) {
-    AppRegistry.registerComponent('Main', () => Main);
+    AppRegistry.registerComponent('Main', () => Main)
     const page = await renderPage()
+
     // @ts-ignore
-    const { getStyleElement } = AppRegistry.getApplication('Main');
+    const { getStyleElement } = AppRegistry.getApplication('Main')
     const styles = [
       <style key="expo-reset" dangerouslySetInnerHTML={{ __html: style }} />,
       getStyleElement(),
-      <style key="tamagui-css" dangerouslySetInnerHTML={{ __html: Tamagui.getCSS() }} />
+      <style key="tamagui-css" dangerouslySetInnerHTML={{ __html: Tamagui.getCSS() }} />,
     ]
     return { ...page, styles: Children.toArray(styles) }
   }
@@ -23,7 +24,7 @@ export default class Document extends NextDocument {
     return (
       <Html>
         <Head>
-          <meta httpEquiv='X-UA-Compatible' content="IE=edge" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         </Head>
         <body>
           <Main />

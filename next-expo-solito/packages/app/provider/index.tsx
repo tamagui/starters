@@ -5,11 +5,9 @@ import { NavigationProvider } from './navigation'
 export function Provider({ children }: { children: React.ReactNode }) {
   return (
     <Tamagui.Provider defaultTheme="light">
-      <Drawer.Provider>
-        <NavigationProvider>
-          {children}
-        </NavigationProvider>
-      </Drawer.Provider>
+      <NavigationProvider>
+        <Drawer.Provider>{children}</Drawer.Provider>
+      </NavigationProvider>
     </Tamagui.Provider>
   )
 }

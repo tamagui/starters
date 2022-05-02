@@ -5,16 +5,12 @@ module.exports = async function (env, argv) {
   // Customize the config before returning it.
 
   // add TAMAGUI_TARGET = web to defines
-  const DefinePlugin = config.plugins.find(
-    (x) => x.constructor.name === 'DefinePlugin',
-  )
+  const DefinePlugin = config.plugins.find((x) => x.constructor.name === 'DefinePlugin')
   DefinePlugin.definitions['process.env']['TAMAGUI_TARGET'] = `"web"`
 
-  // replace babel-loader with our snackui + esbuild loaders
+  // replace babel-loader with our loaders
   const rules = config.module.rules[1].oneOf
-  const ruleIndex = rules.findIndex((x) =>
-    x.use?.loader?.includes('babel-loader'),
-  )
+  const ruleIndex = rules.findIndex((x) => x.use?.loader?.includes('babel-loader'))
 
   rules[ruleIndex] = {
     test: /\.(mjs|[jt]sx?)$/,
@@ -39,6 +35,8 @@ module.exports = async function (env, argv) {
       },
     ],
   }
+
+  console.log('rules', rules)
 
   return config
 }

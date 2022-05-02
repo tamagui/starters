@@ -1,6 +1,7 @@
 import { Drawer } from '@tamagui/drawer'
 import { ChevronDown, ChevronUp } from '@tamagui/feather-icons'
 import React, { useState } from 'react'
+import { useWindowDimensions } from 'react-native'
 import { useLink } from 'solito/link'
 import { Anchor, Button, H1, Paragraph, XStack, YStack } from 'tamagui'
 
@@ -10,7 +11,7 @@ export function HomeScreen() {
   })
 
   return (
-    <YStack f={1} jc="center" ai="center" p="$4" space>
+    <YStack f={1} jc="center" ai="center" p="$4" space="$2">
       <H1 ta="center">Welcome to Tamagui.</H1>
       <YStack maw={600}>
         <Paragraph ta="center">
@@ -36,25 +37,26 @@ export function HomeScreen() {
 
 export default function DrawerDemo() {
   const [show, setShow] = useState(false)
+  const dimensions = useWindowDimensions()
   return (
     <>
-        <Button
-          size="$6"
-          icon={show ? ChevronDown : ChevronUp}
-          circular
-          onPress={() => setShow((x) => !x)}
-        />
-        <Drawer open={show} onChange={setShow}>
-          <YStack ai="center" jc="center" p="$6" space>
-            <Paragraph selectable={false}>Hello.</Paragraph>
-            <Button
-              size="$6"
-              icon={show ? ChevronDown : ChevronUp}
-              circular
-              onPress={() => setShow((x) => !x)}
-            />
-          </YStack>
-        </Drawer>
+      <Button
+        size="$6"
+        icon={show ? ChevronDown : ChevronUp}
+        circular
+        onPress={() => setShow((x) => !x)}
+      />
+      <Drawer open={show} onChangeOpen={setShow}>
+        <Drawer.Frame h={dimensions.height * 0.8} ai="center" jc="center" p="$6" space>
+          <Paragraph selectable={false}>Hello.</Paragraph>
+          <Button
+            size="$6"
+            icon={show ? ChevronDown : ChevronUp}
+            circular
+            onPress={() => setShow((x) => !x)}
+          />
+        </Drawer.Frame>
+      </Drawer>
     </>
   )
 }
