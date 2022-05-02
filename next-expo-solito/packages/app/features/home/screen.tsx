@@ -35,7 +35,7 @@ export function HomeScreen() {
   )
 }
 
-export default function DrawerDemo() {
+function DrawerDemo() {
   const [show, setShow] = useState(false)
   const dimensions = useWindowDimensions()
   return (
