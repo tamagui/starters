@@ -3,9 +3,14 @@
 
 function sync() {
   echo "syncing...."
+  # copy in *all* node modules to ensure sub-deps shared (but prefer not to overwrite)
+  rsync --exclude="*tamagui*" --ignore-existing -al ~/tamagui/node_modules/* node_modules
+
+  # then copy in all tamagui deps but overwrite
   rsync -a --delete -l ~/tamagui/packages/tamagui/ ./node_modules/tamagui &
   rsync -a --delete -l ~/tamagui/packages/tamagui-loader/ ./node_modules/tamagui-loader &
   rsync -a --delete -l ~/tamagui/packages/animated-presence/ ./node_modules/@tamagui/animated-presence &
+  rsync -a --delete -l ~/tamagui/packages/use-controllable-state/ ./node_modules/@tamagui/use-controllable-state &
   rsync -a --delete -l ~/tamagui/packages/animations-reanimated/ ./node_modules/@tamagui/animations-reanimated &
   rsync -a --delete -l ~/tamagui/packages/colors/ ./node_modules/@tamagui/colors &
   rsync -a --delete -l ~/tamagui/packages/drawer/ ./node_modules/@tamagui/drawer &
@@ -19,12 +24,10 @@ function sync() {
   rsync -a --delete -l ~/tamagui/packages/font-inter/ ./node_modules/@tamagui/font-inter &
   rsync -a --delete -l ~/tamagui/packages/theme-base/ ./node_modules/@tamagui/theme-base &
   wait
+
   watchman watch-del-all
   rm -r $TMPDIR/metro-cache || true
 }
 
 sync
 fswatch -o ~/tamagui/packages | while read f; do sync; done
-
-# copy (but dont overwrite) others
-# rsync -r -l ~/tamagui/node_modules/* ./node_modules &

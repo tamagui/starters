@@ -10,7 +10,7 @@ export function HomeScreen() {
   })
 
   return (
-    <YStack debug="verbose" f={1} jc="center" ai="center" p="$4" space>
+    <YStack f={1} jc="center" ai="center" p="$4" space>
       <H1 ta="center">Welcome to Tamagui.</H1>
       <YStack maw={600}>
         <Paragraph ta="center">
