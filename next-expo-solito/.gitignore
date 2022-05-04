@@ -1,10 +1,10 @@
 /node_modules
 .yarn/cache
 
-/.expo/
+**/.expo/*
 
 # next.js
-/.next/
+**/.next/*
 /out/
 
 # production
