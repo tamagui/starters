@@ -3,7 +3,7 @@ import { ChevronDown, ChevronUp } from '@tamagui/feather-icons'
 import React, { useState } from 'react'
 import { useWindowDimensions } from 'react-native'
 import { useLink } from 'solito/link'
-import { Anchor, Button, H1, Paragraph, XStack, YStack } from 'tamagui'
+import { Anchor, Button, H1, Paragraph, XStack, YStack } from '@my/ui'
 
 export function HomeScreen() {
   const linkProps = useLink({

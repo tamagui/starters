@@ -1,5 +1,5 @@
 {
-  "name": "solito-blank",
+  "name": "tamagui-monorepo",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -8,14 +8,32 @@
   "scripts": {
     "native": "cd apps/expo && expo start",
     "web": "cd apps/next && yarn next",
-    "upgrade:tamagui": "manypkg upgrade tamagui canary && manypkg upgrade @tamagui canary && manypkg upgrade tamagui-loader canary"
+    "watch": "yarn workspaces foreach -pi run watch",
+    "upgrade:tamagui": "manypkg upgrade tamagui && manypkg upgrade @tamagui && manypkg upgrade tamagui-loader"
   },
   "resolutions": {
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-refresh": "0.11.0",
     "react-native-web": "0.17.5",
-    "typescript": "4.6.3"
+    "tamagui": "1.0.0-beta.5",
+    "@tamagui/core": "1.0.0-beta.5",
+    "@tamagui/build": "1.0.0-beta.5",
+    "typescript": "4.6.3",
+    "@tamagui/animations-css": "1.0.0-beta.5",
+    "@tamagui/animations-reanimated": "1.0.0-beta.5",
+    "@tamagui/babel-plugin": "1.0.0-beta.5",
+    "@tamagui/colors": "1.0.0-beta.5",
+    "@tamagui/compose-refs": "1.0.0-beta.5",
+    "@tamagui/core-node": "1.0.0-beta.5",
+    "@tamagui/create-context": "1.0.0-beta.5",
+    "@tamagui/drawer": "1.0.0-beta.5",
+    "@tamagui/feather-icons": "1.0.0-beta.5",
+    "@tamagui/font-inter": "1.0.0-beta.5",
+    "tamagui-loader": "1.0.0-beta.5",
+    "@tamagui/next-plugin": "1.0.0-beta.5",
+    "@tamagui/popover": "1.0.0-beta.5",
+    "@tamagui/theme-base": "1.0.0-beta.5"
   },
   "devDependencies": {
     "@manypkg/cli": "^0.19.1",

@@ -1,3 +1,5 @@
+import '@tamagui/core/reset.css'
+
 import { Provider } from 'app/provider'
 import Head from 'next/head'
 import React from 'react'
@@ -9,10 +11,7 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
     <>
       <Head>
         <title>Tamagui Example App</title>
-        <meta
-          name="description"
-          content="Tamagui, Solito, Expo & Next.js"
-        />
+        <meta name="description" content="Tamagui, Solito, Expo & Next.js" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Provider>

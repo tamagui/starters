@@ -1,6 +1,6 @@
 import { shorthands } from '@tamagui/shorthands'
 import { color, radius, size, space, themes, zIndex } from '@tamagui/theme-base'
-import { createTamagui, createTokens } from 'tamagui'
+import { createTamagui, createTokens } from '@my/ui'
 import { createInterFont } from '@tamagui/font-inter'
 
 import { animations } from './constants/animations'
@@ -43,7 +43,7 @@ const config = createTamagui({
 
 export type Conf = typeof config
 
-declare module 'tamagui' {
+declare module '@my/ui' {
   interface TamaguiCustomConfig extends Conf {}
 }
 

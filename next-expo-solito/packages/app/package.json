@@ -3,6 +3,7 @@
   "name": "app",
   "main": "index.ts",
   "dependencies": {
+    "@my/ui": "*",
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/native-stack": "^6.6.2",
     "@tamagui/animations-reanimated": "1.0.0-beta.5",
@@ -13,8 +14,7 @@
     "@tamagui/shorthands": "1.0.0-beta.5",
     "@tamagui/theme-base": "1.0.0-beta.5",
     "expo-linking": "^3.0.0",
-    "solito": "^0.0.25",
-    "tamagui": "1.0.0-beta.5"
+    "solito": "^0.0.25"
   },
   "sideEffects": false
 }

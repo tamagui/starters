@@ -2351,6 +2351,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@my/ui@*, @my/ui@workspace:packages/ui":
+  version: 0.0.0-use.local
+  resolution: "@my/ui@workspace:packages/ui"
+  dependencies:
+    "@tamagui/build": ^1.0.0-beta.5
+    "@tamagui/use-debounce": ^1.0.0-beta.5
+    "@tamagui/use-force-update": ^1.0.0-beta.5
+    "@tamagui/use-window-size": ^1.0.0-beta.5
+    tamagui: ^1.0.0-beta.5
+  languageName: unknown
+  linkType: soft
+
 "@next/env@npm:12.1.6":
   version: 12.1.6
   resolution: "@next/env@npm:12.1.6"
@@ -3060,7 +3072,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/animate-presence@npm:^1.0.0-beta.5, @tamagui/animate-presence@npm:^1.0.0-canary.204+d95a5880":
+"@tamagui/animate-presence@npm:^1.0.0-beta.5":
   version: 1.0.0-canary.204
   resolution: "@tamagui/animate-presence@npm:1.0.0-canary.204"
   dependencies:
@@ -3093,9 +3105,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/build@npm:^1.0.0-canary.204+d95a5880":
-  version: 1.0.0-canary.204
-  resolution: "@tamagui/build@npm:1.0.0-canary.204"
+"@tamagui/build@npm:1.0.0-beta.5":
+  version: 1.0.0-beta.5
+  resolution: "@tamagui/build@npm:1.0.0-beta.5"
   dependencies:
     chokidar: ^3.5.2
     esbuild: ^0.14.36
@@ -3106,7 +3118,7 @@ __metadata:
     typescript: ^4.5.2
   bin:
     tamagui-build: tamagui-build.js
-  checksum: 53a0275cd7e231e14d415617448ed7be6993cc64bb9658cbdf3508ade59e5590f2a84ec418b3c1a78bbfe0a54fc1c370582916afe463ae33177ecb9647bd6f88
+  checksum: 87bdd544fb9e68fbbc4d08c3deffae70e1c2b2579b5572ff06a2b1144c527904c21a5ae6564b3d12a9d24638adced4083eeeb359fdc416ced7252bc507afc52f
   languageName: node
   linkType: hard
 
@@ -3117,46 +3129,46 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/compose-refs@npm:^1.0.0-beta.5, @tamagui/compose-refs@npm:^1.0.0-canary.204+d95a5880":
-  version: 1.0.0-canary.204
-  resolution: "@tamagui/compose-refs@npm:1.0.0-canary.204"
+"@tamagui/compose-refs@npm:1.0.0-beta.5":
+  version: 1.0.0-beta.5
+  resolution: "@tamagui/compose-refs@npm:1.0.0-beta.5"
   peerDependencies:
     react: "*"
-  checksum: f0f1a2c5862f18d1822ffdcc0e69a9df951acff459efdc89d050495da2e0a65071adbb595902a917df43d866b75e80a99b3b8bb645e6c68fbb948d966a4f4887
+  checksum: f011668815c2ef7f4f5262a9a353f9a4b1d93790a0b65d20ddd93f41a72394407458912537ffeea47b5be9f5d8893a42a1b742ed975ac019bb4f6d65ddff6993
   languageName: node
   linkType: hard
 
-"@tamagui/core-node@npm:^1.0.0-canary.204+d95a5880":
-  version: 1.0.0-canary.204
-  resolution: "@tamagui/core-node@npm:1.0.0-canary.204"
+"@tamagui/core-node@npm:1.0.0-beta.5":
+  version: 1.0.0-beta.5
+  resolution: "@tamagui/core-node@npm:1.0.0-beta.5"
   dependencies:
-    "@tamagui/helpers": ^1.0.0-canary.204+d95a5880
-  checksum: 0a54a77fd2349829185b6866bd7cdcbb98840ca7177be50d965dc472dd252fe5879baefce19bf8c433a8816ec6cff895fb120f3609cae4801ed05578fcfc2ab2
+    "@tamagui/helpers": ^1.0.0-beta.5
+  checksum: 1d59b151446589d97349f4dc6e810ae0c0223f9fcb8da5c1755cb4952b97810aedc6b57da6f71c666ab6fd3ff4457cdf2deaf803191208dff8991926ed37ba80
   languageName: node
   linkType: hard
 
-"@tamagui/core@npm:^1.0.0-beta.5, @tamagui/core@npm:^1.0.0-canary.204+d95a5880":
-  version: 1.0.0-canary.204
-  resolution: "@tamagui/core@npm:1.0.0-canary.204"
+"@tamagui/core@npm:1.0.0-beta.5":
+  version: 1.0.0-beta.5
+  resolution: "@tamagui/core@npm:1.0.0-beta.5"
   dependencies:
-    "@tamagui/helpers": ^1.0.0-canary.204+d95a5880
+    "@tamagui/helpers": ^1.0.0-beta.5
     "@tamagui/ow": ^0.28.1
-    "@tamagui/use-debounce": ^1.0.0-canary.204+d95a5880
-    "@tamagui/use-force-update": ^1.0.0-canary.204+d95a5880
+    "@tamagui/use-debounce": ^1.0.0-beta.5
+    "@tamagui/use-force-update": ^1.0.0-beta.5
     react: "*"
     react-dom: "*"
   peerDependencies:
     react-native-web: "*"
-  checksum: e05fd3fbd97c7c2141f6ab4fb687f271453ea9269fa0121f76c3ac6709cdc77cebefea60fc076d21fcaf8b2a21e819e03f44dc759ef9d102c580f5616d0aef17
+  checksum: 89ea5f7b6b83f9f27abf24dd105b34f75ea7ab4a94c7d7bc6c63bd1c93a66a36913375b7eb2683236ec919b47755b96abdad5f13e5261e4be4c1fa38220fa86d
   languageName: node
   linkType: hard
 
-"@tamagui/create-context@npm:^1.0.0-beta.5, @tamagui/create-context@npm:^1.0.0-canary.204+d95a5880":
-  version: 1.0.0-canary.204
-  resolution: "@tamagui/create-context@npm:1.0.0-canary.204"
+"@tamagui/create-context@npm:1.0.0-beta.5":
+  version: 1.0.0-beta.5
+  resolution: "@tamagui/create-context@npm:1.0.0-beta.5"
   peerDependencies:
     react: "*"
-  checksum: c6433384723bbf7fac3c6aa6d15764664749be981fd360f8b23cb02bd7f2de0e51180bead151b6ab44b913104944a0ac678e01d23db724b097ec2dd09e16073e
+  checksum: cdcde72b73dd2660e596546d8b916b86af6775229dab5b891b530a84e822ea2ec27c7c0218afb2aee8349de870f6da18ba4125400d4b8b3c911cacbc097861e8
   languageName: node
   linkType: hard
 
@@ -3278,7 +3290,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/stacks@npm:^1.0.0-beta.5, @tamagui/stacks@npm:^1.0.0-canary.204+d95a5880":
+"@tamagui/stacks@npm:^1.0.0-beta.5":
   version: 1.0.0-canary.204
   resolution: "@tamagui/stacks@npm:1.0.0-canary.204"
   dependencies:
@@ -3290,7 +3302,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/static@npm:^1.0.0-beta.5, @tamagui/static@npm:^1.0.0-canary.204+d95a5880":
+"@tamagui/static@npm:^1.0.0-beta.5":
   version: 1.0.0-canary.204
   resolution: "@tamagui/static@npm:1.0.0-canary.204"
   dependencies:
@@ -3326,7 +3338,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tamagui/use-controllable-state@npm:^1.0.0-beta.5, @tamagui/use-controllable-state@npm:^1.0.0-canary.204+d95a5880":
+"@tamagui/use-controllable-state@npm:^1.0.0-beta.5":
   version: 1.0.0-canary.204
   resolution: "@tamagui/use-controllable-state@npm:1.0.0-canary.204"
   dependencies:
@@ -3353,6 +3365,19 @@ __metadata:
   peerDependencies:
     react: "*"
   checksum: 7175a04c30f63435ab27c305e5ba79f91a2bfacfe8a4acf8c1df706c8f0fb8e1093d59d46559cd7b85f9cfccd35ba9d80643afde3679f36287058d1bd7407701
+  languageName: node
+  linkType: hard
+
+"@tamagui/use-window-size@npm:^1.0.0-beta.5":
+  version: 1.0.0-canary.204
+  resolution: "@tamagui/use-window-size@npm:1.0.0-canary.204"
+  dependencies:
+    "@tamagui/use-debounce": ^1.0.0-canary.204+d95a5880
+    "@tamagui/use-force-update": ^1.0.0-canary.204+d95a5880
+    react: "*"
+  peerDependencies:
+    react-native: "*"
+  checksum: 8e15e2e3434151142325d1569cd08e5a7db7b2c4d3309af2d983a00559a0fe8ca61eccd063be2bb3578773269a483442f76b6cd4b20944a88313f0022774f8c4
   languageName: node
   linkType: hard
 
@@ -4286,6 +4311,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app@workspace:packages/app"
   dependencies:
+    "@my/ui": "*"
     "@react-navigation/native": ^6.0.10
     "@react-navigation/native-stack": ^6.6.2
     "@tamagui/animations-reanimated": 1.0.0-beta.5
@@ -4297,7 +4323,6 @@ __metadata:
     "@tamagui/theme-base": 1.0.0-beta.5
     expo-linking: ^3.0.0
     solito: ^0.0.25
-    tamagui: 1.0.0-beta.5
   languageName: unknown
   linkType: soft
 
@@ -15463,16 +15488,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-safe-area-context@npm:^4.2.5":
-  version: 4.2.5
-  resolution: "react-native-safe-area-context@npm:4.2.5"
-  peerDependencies:
-    react: "*"
-    react-native: "*"
-  checksum: 66bc91285c8e330fdad18ba0ecd1e0f2bae28449e254501837cbee86b7ac170e1da83eef33d8634ec3c43f23621bcd56f995159d811fbc0babde2b38dd10f3e1
-  languageName: node
-  linkType: hard
-
 "react-native-screens@npm:^3.4.0":
   version: 3.13.1
   resolution: "react-native-screens@npm:3.13.1"
@@ -16823,20 +16838,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"solito-blank@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "solito-blank@workspace:."
-  dependencies:
-    "@manypkg/cli": ^0.19.1
-    "@types/react": ^17.0.39
-    "@types/react-native": ^0.67.2
-    eslint: ^8.11.0
-    prettier: ^2.6.2
-    turbo: ^1.1.6
-    typescript: ^4.6.3
-  languageName: unknown
-  linkType: soft
-
 "solito@npm:^0.0.25":
   version: 0.0.25
   resolution: "solito@npm:0.0.25"
@@ -17499,16 +17500,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tamagui-loader@npm:^1.0.0-beta.5":
-  version: 1.0.0-canary.204
-  resolution: "tamagui-loader@npm:1.0.0-canary.204"
+"tamagui-loader@npm:1.0.0-beta.5":
+  version: 1.0.0-beta.5
+  resolution: "tamagui-loader@npm:1.0.0-beta.5"
   dependencies:
-    "@tamagui/static": ^1.0.0-canary.204+d95a5880
+    "@tamagui/static": ^1.0.0-beta.5
     fs-extra: ^9.1.0
     lodash: ^4.17.21
-  checksum: d92dc2d5d0008b29e67f82d174ee1f5d32f0daac3132e4ddc0be0e5f38c261630e47a3c77fc504d53d5ff106e786b2914acda23c664637bf903a91c2bfe91076
+  checksum: 03c996e2edd51f6386d494b649ddf7493dc0968a3a3d9e977232deff4a0884e58be1fd0390dce2a32e02a00ef998b500520f18b3d3d511ce2ec66bedcc51ff32
   languageName: node
   linkType: hard
+
+"tamagui-monorepo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "tamagui-monorepo@workspace:."
+  dependencies:
+    "@manypkg/cli": ^0.19.1
+    "@types/react": ^17.0.39
+    "@types/react-native": ^0.67.2
+    eslint: ^8.11.0
+    prettier: ^2.6.2
+    turbo: ^1.1.6
+    typescript: ^4.6.3
+  languageName: unknown
+  linkType: soft
 
 "tamagui@npm:1.0.0-beta.5":
   version: 1.0.0-beta.5
@@ -17537,36 +17552,6 @@ __metadata:
   peerDependencies:
     react-native-web: "*"
   checksum: bd275fdf6754c4913121c2b11bb3557d1f274de5672282cd1e71186027cda9aa4423de7e20c0e26634fe4edc080848afb88486036b6b25ee7c1524b8b73c2c7c
-  languageName: node
-  linkType: hard
-
-"tamagui@npm:^1.0.0-canary.204+d95a5880":
-  version: 1.0.0-canary.204
-  resolution: "tamagui@npm:1.0.0-canary.204"
-  dependencies:
-    "@radix-ui/react-use-callback-ref": ^0.1.0
-    "@react-aria/ssr": ^3.1.2
-    "@react-aria/utils": ^3.11.3
-    "@react-native-aria/focus": ^0.2.5
-    "@react-native-aria/overlays": ^0.3.2
-    "@react-native-community/blur": ^3.6.0
-    "@tamagui/animate-presence": ^1.0.0-canary.204+d95a5880
-    "@tamagui/compose-refs": ^1.0.0-canary.204+d95a5880
-    "@tamagui/core": ^1.0.0-canary.204+d95a5880
-    "@tamagui/create-context": ^1.0.0-canary.204+d95a5880
-    "@tamagui/expo-linear-gradient": 11.2.7
-    "@tamagui/fake-react-native": ^1.0.0-canary.204+d95a5880
-    "@tamagui/helpers": ^1.0.0-canary.204+d95a5880
-    "@tamagui/stacks": ^1.0.0-canary.204+d95a5880
-    "@tamagui/use-controllable-state": ^1.0.0-canary.204+d95a5880
-    "@tamagui/use-debounce": ^1.0.0-canary.204+d95a5880
-    "@tamagui/use-force-update": ^1.0.0-canary.204+d95a5880
-    react: "*"
-    react-dom: "*"
-    react-native-safe-area-context: ^4.2.5
-  peerDependencies:
-    react-native-web: "*"
-  checksum: cce91720cfb2e5a69fcb6fd7734099cbe88948f8b57898d81ffaa73a254a33557920ed818830b6375556d585f7ca13ac87005765cee46777933f2e125e137b3e
   languageName: node
   linkType: hard
 

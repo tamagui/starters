@@ -46,6 +46,22 @@ You can add other folders inside of `packages/` if you know what you're doing an
 - Expo local dev: `yarn native`
   - Runs `expo start`
 
+## Developing
+
+We've added `packages/ui` to show an example of [building your own design system](https://tamagui.dev/docs/guides/design-systems).
+
+You need to watch it to have changes propagate, we've added a root `watch` command you should run in a separate terminal alongside the apps:
+
+```bash
+yarn watch
+```
+
+## UI Kit
+
+Note we're following the [design systems guide](https://tamagui.dev/docs/guides/design-systems) and creating our own package for components.
+
+See `packages/ui` named `@my/ui` for how this works.
+
 ## 🆕 Add new dependencies
 
 ### Pure JS dependencies
