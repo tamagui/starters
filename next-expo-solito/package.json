@@ -9,6 +9,7 @@
     "native": "cd apps/expo && expo start",
     "web": "cd apps/next && yarn next",
     "watch": "yarn workspaces foreach -pi run watch",
+    "build": "yarn workspaces foreach --exclude next-app -pi run build",
     "upgrade:tamagui": "manypkg upgrade tamagui && manypkg upgrade @tamagui && manypkg upgrade tamagui-loader"
   },
   "resolutions": {

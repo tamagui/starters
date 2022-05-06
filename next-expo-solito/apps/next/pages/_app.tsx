@@ -1,4 +1,5 @@
-import '@tamagui/core/reset.css'
+// causing webpack issue
+// import '@tamagui/core/reset.css'
 
 import { Provider } from 'app/provider'
 import Head from 'next/head'
