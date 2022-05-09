@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const withPlugins = require('next-compose-plugins')
 const { withTamagui } = require('@tamagui/next-plugin')
-const { withExpo } = require('@expo/next-adapter')
+// const { withExpo } = require('@expo/next-adapter')
 const withTM = require('next-transpile-modules')
 
 process.env.IGNORE_TS_CONFIG_PATHS = 'true'
