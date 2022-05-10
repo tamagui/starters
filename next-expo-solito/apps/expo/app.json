@@ -1,13 +1,32 @@
 {
   "expo": {
-    "name": "solito-blank",
-    "slug": "solito-blank",
+    "name": "my-app",
+    "slug": "my-app",
     "version": "1.0.0",
-    "sdkVersion": "44.0.0",
-    "scheme": "solito-blank",
-    "platforms": ["ios", "android"],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "bundleIdentifier": "com.solito.blank"
+      "bundleIdentifier": "com.solito.blank",
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
     }
   }
 }

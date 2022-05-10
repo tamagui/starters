@@ -16,8 +16,6 @@ config.resolver.nodeModulesPaths = [
   path.resolve(workspaceRoot, 'node_modules'),
 ]
 
-console.log(config.resolver.nodeModulesPaths)
-
 module.exports = config
 
 // const defaultSourceExts =
