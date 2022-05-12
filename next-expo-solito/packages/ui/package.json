@@ -18,12 +18,12 @@
     "watch": "tamagui-build --watch"
   },
   "dependencies": {
-    "@tamagui/use-debounce": "^1.0.1-beta.20",
-    "@tamagui/use-force-update": "^1.0.1-beta.20",
-    "@tamagui/use-window-size": "^1.0.1-beta.20",
-    "tamagui": "^1.0.1-beta.20"
+    "@tamagui/use-debounce": "^1.0.1-beta.21",
+    "@tamagui/use-force-update": "^1.0.1-beta.21",
+    "@tamagui/use-window-size": "^1.0.1-beta.21",
+    "tamagui": "^1.0.1-beta.21"
   },
   "devDependencies": {
-    "@tamagui/build": "^1.0.1-beta.20"
+    "@tamagui/build": "^1.0.1-beta.21"
   }
 }
