@@ -77,13 +77,12 @@ yarn
 
 ### Native dependencies
 
-If you're installing a library with any native code, you must install it in `apps/expo`:
+If you're installing a library with any native code, you must install it in `expo`:
 
 ```sh
-cd apps/expo
+cd expo
 yarn add react-native-reanimated
-
-cd ../..
+cd ..
 yarn
 ```
 

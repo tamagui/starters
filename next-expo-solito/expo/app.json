@@ -16,7 +16,6 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "bundleIdentifier": "com.solito.blank",
       "supportsTablet": true
     },
     "android": {

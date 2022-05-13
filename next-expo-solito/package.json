@@ -2,18 +2,20 @@
   "name": "tamagui-monorepo",
   "private": true,
   "workspaces": [
-    "apps/*",
+    "expo",
+    "next",
     "packages/*"
   ],
   "scripts": {
-    "native": "cd apps/expo && expo start",
-    "web": "cd apps/next && yarn next",
+    "native": "cd expo && yarn start",
+    "web": "cd next && yarn next",
     "watch": "yarn workspaces foreach -pi run watch",
     "build": "yarn workspaces foreach --exclude next-app -pi run build",
     "upgrade:tamagui": "manypkg upgrade tamagui && manypkg upgrade @tamagui && manypkg upgrade tamagui-loader",
     "sync:tamagui": "${TAMAGUI_PATH:-$HOME/tamagui}/starters-sync.sh"
   },
   "resolutions": {
+    "cacache": "16.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-refresh": "0.11.0",
