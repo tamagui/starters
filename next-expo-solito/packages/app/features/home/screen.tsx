@@ -1,3 +1,4 @@
+// debug
 import { Drawer } from '@tamagui/drawer'
 import { ChevronDown, ChevronUp } from '@tamagui/feather-icons'
 import React, { useState } from 'react'
@@ -11,9 +12,9 @@ export function HomeScreen() {
   })
 
   return (
-    <YStack f={1} jc="center" ai="center" p="$4" space="$2">
-      <H1 ta="center">Welcome to Tamagui.</H1>
-      <YStack maw={600}>
+    <YStack f={1} jc="center" ai="center" p="$4" space>
+      <YStack space="$2" maw={600}>
+        <H1 ta="center">Welcome to Tamagui.</H1>
         <Paragraph ta="center">
           Here is a basic starter to show you how you can navigate from one screen to another. This
           screen uses the same code on Next.js and React Native.
@@ -26,6 +27,7 @@ export function HomeScreen() {
           .
         </Paragraph>
       </YStack>
+
       <XStack>
         <Button {...linkProps}>Link to user</Button>
       </XStack>

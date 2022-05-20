@@ -7,7 +7,7 @@ const withTM = require('next-transpile-modules')
 process.env.IGNORE_TS_CONFIG_PATHS = 'true'
 process.env.TAMAGUI_TARGET = 'web'
 
-const disableExtraction = process.env.NODE_ENV === 'development'
+const disableExtraction = false //process.env.NODE_ENV === 'development'
 
 const transform = withPlugins([
   withTM([
@@ -22,10 +22,15 @@ const transform = withPlugins([
   // [withExpo, { projectRoot: __dirname }],
   withTamagui({
     config: './tamagui.config.ts',
-    components: ['tamagui'],
+    components: ['@tamagui/core', 'tamagui', '@my/ui'],
     importsWhitelist: ['constants.js', 'colors.js'],
     logTimings: true,
     disableExtraction,
+    shouldExtract: (path) => {
+      if (path.includes('packages/app')) {
+        return true
+      }
+    },
     excludeReactNativeWebExports: [
       'Switch',
       'ProgressBar',
