@@ -17,7 +17,7 @@
     "react-native-web": "^0.17.7"
   },
   "devDependencies": {
-    "@tamagui/next-plugin": "1.0.1-beta.35",
+    "@tamagui/next-plugin": "1.0.1-beta.37",
     "@types/node": "^17.0.24",
     "eslint-config-next": "^12.1.5",
     "next-compose-plugins": "^2.2.1",
