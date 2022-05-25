@@ -7,9 +7,10 @@
     "packages/*"
   ],
   "scripts": {
-    "native": "cd expo && yarn start",
-    "web": "cd next && yarn next",
+    "native": "yarn build && cd expo && yarn start",
+    "web": "yarn build && cd next && yarn next",
     "watch": "yarn workspaces foreach -pi run watch",
+    "postinstall": "yarn build",
     "build": "yarn workspaces foreach --exclude next-app -pi run build",
     "upgrade:tamagui": "manypkg upgrade tamagui && manypkg upgrade @tamagui && manypkg upgrade tamagui-loader",
     "sync:tamagui": "${TAMAGUI_PATH:-$HOME/tamagui}/starters-sync.sh"
