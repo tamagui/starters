@@ -7,19 +7,20 @@ const withTM = require('next-transpile-modules')
 process.env.IGNORE_TS_CONFIG_PATHS = 'true'
 process.env.TAMAGUI_TARGET = 'web'
 
-const disableExtraction = false //process.env.NODE_ENV === 'development'
+const disableExtraction = process.env.NODE_ENV === 'development'
+if (disableExtraction) {
+  console.log('Disabling static extraction in development mode for better HMR')
+}
 
 const transform = withPlugins([
   withTM([
     'solito',
-    'app',
     'react-native-web',
     '@expo/next-adapter',
     'expo-linking',
     'expo-constants',
     'expo-modules-core',
   ]),
-  // [withExpo, { projectRoot: __dirname }],
   withTamagui({
     config: './tamagui.config.ts',
     components: ['@tamagui/core', 'tamagui', '@my/ui'],
@@ -37,6 +38,10 @@ const transform = withPlugins([
       'Picker',
       'Animated',
       'AnimatedFlatList',
+      'VirtualizedList',
+      'VirtualizedSectionList',
+      'FlatList',
+      'CheckBox',
     ],
   }),
 ])
@@ -45,5 +50,14 @@ module.exports = function (name, { defaultConfig }) {
   defaultConfig.webpack5 = true
   // defaultConfig.experimental.reactRoot = 'concurrent'
   defaultConfig.typescript.ignoreBuildErrors = true
-  return transform(name, { defaultConfig })
+  return transform(name, {
+    ...defaultConfig,
+    webpack5: true,
+    experimental: {
+      plugins: true,
+      scrollRestoration: true,
+      legacyBrowsers: false,
+      browsersListForSwc: true,
+    }
+  })
 }

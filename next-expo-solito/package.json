@@ -7,8 +7,8 @@
     "packages/*"
   ],
   "scripts": {
-    "native": "yarn build skip-types && cd expo && yarn start",
-    "web": "yarn build skip-types && cd next && yarn next",
+    "native": "yarn build && cd expo && yarn start",
+    "web": "yarn build && cd next && yarn next",
     "watch": "yarn workspaces foreach -pi run watch",
     "postinstall": "yarn build",
     "build": "yarn workspaces foreach --exclude next-app -pi run build",
