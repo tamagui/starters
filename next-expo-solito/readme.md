@@ -24,12 +24,13 @@ Many thanks to  [@FernandoTheRojo](https://twitter.com/fernandotherojo) for the 
 
 ## 🗂 Folder layout
 
-- `apps` entry points for each app
+The main apps are:
 
-  - `expo`
-  - `next`
+- `expo` (native)
+- `next` (web)
 
 - `packages` shared packages across apps
+  - `ui` includes your custom UI kit that will be optimized by Tamagui
   - `app` you'll be importing most files from `app/`
     - `features` (don't use a `screens` folder. organize by feature.)
     - `provider` (all the providers that wrap the app, and some no-ops for Web.)
@@ -55,6 +56,14 @@ You need to watch it to have changes propagate, we've added a root `watch` comma
 ```bash
 yarn watch
 ```
+
+If you want to see Tamagui extract, try running `yarn web:optimize` and put a debug pragma at the top of `packages/app/features/home.tsx`, like so:
+
+```tsx
+// debug
+```
+
+You'll see lots of output including the compiled HTML, CSS and all the steps it takes to get there.
 
 ## UI Kit
 
