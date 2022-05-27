@@ -11,6 +11,9 @@ module.exports = function (api) {
           config: './tamagui.config.ts',
         },
       ],
+      ['transform-inline-environment-variables', {
+        include: 'TAMAGUI_TARGET'
+      }]
     ],
   }
 }
