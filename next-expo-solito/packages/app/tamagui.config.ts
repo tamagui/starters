@@ -1,7 +1,7 @@
-import { shorthands } from '@tamagui/shorthands'
-import { color, radius, size, space, themes, zIndex } from '@tamagui/theme-base'
-import { createTamagui, createTokens } from '@my/ui'
+import { createTamagui } from '@my/ui'
 import { createInterFont } from '@tamagui/font-inter'
+import { shorthands } from '@tamagui/shorthands'
+import { themes, tokens } from '@tamagui/theme-base'
 
 import { animations } from './constants/animations'
 
@@ -53,13 +53,7 @@ const config = createTamagui({
     body: bodyFont,
   },
   themes,
-  tokens: createTokens({
-    size,
-    space,
-    zIndex,
-    color,
-    radius,
-  }),
+  tokens,
   media: {
     xs: { maxWidth: 660 },
     sm: { maxWidth: 800 },
