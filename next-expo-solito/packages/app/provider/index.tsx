@@ -5,7 +5,7 @@ import { TamaguiProviderProps } from '@my/ui'
 
 export function Provider({ children, ...rest }: TamaguiProviderProps) {
   return (
-    <Tamagui.Provider defaultTheme="light" {...rest}>
+    <Tamagui.Provider disableInjectCSS defaultTheme="light" {...rest}>
       <NavigationProvider>
         <Drawer.Provider>{children}</Drawer.Provider>
       </NavigationProvider>
