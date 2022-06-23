@@ -10,15 +10,15 @@
   },
   "dependencies": {
     "@expo/next-adapter": "^4.0.4",
-    "@tamagui/next-theme": "1.0.1-beta.73",
+    "@tamagui/next-theme": "1.0.1-beta.75",
     "app": "*",
     "next": "^12.1.5",
     "raf": "^3.4.1",
     "react-native": "0.0.0",
-    "react-native-web": "^0.17.7"
+    "react-native-web": "^0.18.1"
   },
   "devDependencies": {
-    "@tamagui/next-plugin": "1.0.1-beta.73",
+    "@tamagui/next-plugin": "1.0.1-beta.75",
     "@types/node": "^17.0.24",
     "eslint-config-next": "^12.1.5",
     "next-compose-plugins": "^2.2.1",
