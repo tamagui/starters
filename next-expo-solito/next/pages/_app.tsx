@@ -1,4 +1,3 @@
-// causing webpack issue
 import '@tamagui/core/reset.css'
 import '@tamagui/font-inter/css/400.css'
 import '@tamagui/font-inter/css/700.css'
@@ -12,13 +11,11 @@ import 'raf/polyfill'
 
 function MyApp({ Component, pageProps }: SolitoAppProps) {
   const [theme, setTheme] = useRootTheme()
-  
+
   const contents = useMemo(() => {
-    return (
-      <Component {...pageProps} />
-    )
+    return <Component {...pageProps} />
   }, [pageProps])
-  
+
   return (
     <>
       <Head>
