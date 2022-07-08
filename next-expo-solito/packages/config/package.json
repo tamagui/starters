@@ -1,0 +1,12 @@
+{
+  "version": "0.0.0",
+  "name": "@my/config",
+  "main": "tamagui.config.ts",
+  "dependencies": {
+    "@tamagui/animations-reanimated": "1.0.1-beta.97",
+    "@tamagui/font-inter": "1.0.1-beta.97",
+    "@tamagui/shorthands": "1.0.1-beta.97",
+    "@tamagui/theme-base": "1.0.1-beta.97"
+  },
+  "sideEffects": false
+}

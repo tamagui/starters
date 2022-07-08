@@ -18,6 +18,7 @@
     "watch": "tamagui-build --watch"
   },
   "dependencies": {
+    "@my/config": "*",
     "@tamagui/use-debounce": "^1.0.1-beta.97",
     "@tamagui/use-force-update": "^1.0.1-beta.97",
     "@tamagui/use-window-size": "^1.0.1-beta.97",
