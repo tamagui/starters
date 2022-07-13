@@ -16,24 +16,4 @@ config.resolver.nodeModulesPaths = [
   path.resolve(workspaceRoot, 'node_modules'),
 ]
 
-module.exports = {
-  ...config,
-  plugins: [...(config.plugins || []), 'react-native-reanimated/plugin'],
-}
-
-// const defaultSourceExts =
-//   require('metro-config/src/defaults/defaults').sourceExts
-
-// module.exports = {
-//   transformer: {
-//     getTransformOptions: () => ({
-//       transform: {
-//         experimentalImportSupport: true,
-//         inlineRequires: true,
-//       },
-//     }),
-//   },
-//   resolver: {
-//     sourceExts: [...defaultSourceExts, 'cjs'],
-//   },
-// }
+module.exports = config
