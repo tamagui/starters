@@ -20,6 +20,7 @@ const transform = withPlugins([
     'expo-linking',
     'expo-constants',
     'expo-modules-core',
+    '@my/config',
   ]),
   withTamagui({
     config: './tamagui.config.ts',
@@ -58,6 +59,6 @@ module.exports = function (name, { defaultConfig }) {
       scrollRestoration: true,
       legacyBrowsers: false,
       browsersListForSwc: true,
-    }
+    },
   })
 }
