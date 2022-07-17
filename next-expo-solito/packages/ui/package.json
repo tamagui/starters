@@ -19,12 +19,12 @@
   },
   "dependencies": {
     "@my/config": "*",
-    "@tamagui/use-debounce": "^1.0.1-beta.108",
-    "@tamagui/use-force-update": "^1.0.1-beta.108",
-    "@tamagui/use-window-size": "^1.0.1-beta.108",
-    "tamagui": "^1.0.1-beta.108"
+    "@tamagui/use-debounce": "^1.0.1-beta.113",
+    "@tamagui/use-force-update": "^1.0.1-beta.113",
+    "@tamagui/use-window-size": "^1.0.1-beta.113",
+    "tamagui": "^1.0.1-beta.113"
   },
   "devDependencies": {
-    "@tamagui/build": "^1.0.1-beta.108"
+    "@tamagui/build": "^1.0.1-beta.113"
   }
 }

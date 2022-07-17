@@ -1,4 +1,3 @@
-import { style } from '@expo/next-adapter/document'
 import NextDocument, { Head, Html, Main, NextScript } from 'next/document'
 import { Children } from 'react'
 import { AppRegistry } from 'react-native'
@@ -13,7 +12,6 @@ export default class Document extends NextDocument {
     // @ts-ignore
     const { getStyleElement } = AppRegistry.getApplication('Main')
     const styles = [
-      <style key="expo-reset" dangerouslySetInnerHTML={{ __html: style }} />,
       getStyleElement(),
       <style key="tamagui-css" dangerouslySetInnerHTML={{ __html: Tamagui.getCSS() }} />,
     ]

@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const withPlugins = require('next-compose-plugins')
 const { withTamagui } = require('@tamagui/next-plugin')
-// const { withExpo } = require('@expo/next-adapter')
 const withTM = require('next-transpile-modules')
 
 process.env.IGNORE_TS_CONFIG_PATHS = 'true'
@@ -16,7 +15,6 @@ const transform = withPlugins([
   withTM([
     'solito',
     'react-native-web',
-    '@expo/next-adapter',
     'expo-linking',
     'expo-constants',
     'expo-modules-core',
@@ -24,7 +22,7 @@ const transform = withPlugins([
   ]),
   withTamagui({
     config: './tamagui.config.ts',
-    components: ['@tamagui/core', 'tamagui', '@my/ui'],
+    components: ['tamagui', '@my/ui'],
     importsWhitelist: ['constants.js', 'colors.js'],
     logTimings: true,
     disableExtraction,
@@ -37,12 +35,15 @@ const transform = withPlugins([
       'Switch',
       'ProgressBar',
       'Picker',
-      'Animated',
-      'AnimatedFlatList',
+      'Modal',
+      'PressResponder',
       'VirtualizedList',
       'VirtualizedSectionList',
+      'AnimatedFlatList',
       'FlatList',
       'CheckBox',
+      'Touchable',
+      'SectionList',
     ],
   }),
 ])
