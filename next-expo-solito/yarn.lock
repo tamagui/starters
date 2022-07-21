@@ -1756,10 +1756,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@expo/config-plugins@npm:~5.0.0":
+  version: 5.0.0
+  resolution: "@expo/config-plugins@npm:5.0.0"
+  dependencies:
+    "@expo/config-types": ^46.0.0
+    "@expo/json-file": 8.2.36
+    "@expo/plist": 0.0.18
+    "@expo/sdk-runtime-versions": ^1.0.0
+    "@react-native/normalize-color": ^2.0.0
+    chalk: ^4.1.2
+    debug: ^4.3.1
+    find-up: ~5.0.0
+    getenv: ^1.0.0
+    glob: 7.1.6
+    resolve-from: ^5.0.0
+    semver: ^7.3.5
+    slash: ^3.0.0
+    xcode: ^3.0.1
+    xml2js: 0.4.23
+  checksum: a7085e7543b35062ea262b82a92383b25ea6743ee452a4fa619508b834903a745b2e83fd83b5d9c83e242177b4791439ff62ecc9f173ea9e2183d814b106068c
+  languageName: node
+  linkType: hard
+
 "@expo/config-types@npm:^45.0.0":
   version: 45.0.0
   resolution: "@expo/config-types@npm:45.0.0"
   checksum: 9b4866540654da61af0985ebfc975b3cb690625acf7742443a7e56263bf134b261e22719720982223407f8957d08a3646178c79f482861218882f0956d804021
+  languageName: node
+  linkType: hard
+
+"@expo/config-types@npm:^46.0.0":
+  version: 46.0.1
+  resolution: "@expo/config-types@npm:46.0.1"
+  checksum: 2f5b1b03d4636893f406fb934ef76e9ed0b71161bc27f2c53e94223525655111b60ed83e803065f666cca88d2d11e38f604b5513efd641805a9bde4a852b06cb
   languageName: node
   linkType: hard
 
@@ -1779,6 +1809,25 @@ __metadata:
     slugify: ^1.3.4
     sucrase: ^3.20.0
   checksum: ea08a1ba291c578fbffe10350e9a3b51cc8e487dac4311755a3929b02c631fa2608e1ea50349a08e584fa3d1fe2c513a141147774a34b025f650e0e284e31108
+  languageName: node
+  linkType: hard
+
+"@expo/config@npm:~7.0.0":
+  version: 7.0.0
+  resolution: "@expo/config@npm:7.0.0"
+  dependencies:
+    "@babel/code-frame": ~7.10.4
+    "@expo/config-plugins": ~5.0.0
+    "@expo/config-types": ^46.0.0
+    "@expo/json-file": 8.2.36
+    getenv: ^1.0.0
+    glob: 7.1.6
+    require-from-string: ^2.0.2
+    resolve-from: ^5.0.0
+    semver: 7.3.2
+    slugify: ^1.3.4
+    sucrase: ^3.20.0
+  checksum: e061decfc47b8bf144c54b34f788c244f2befa31604c9370eeae281d8e64a22cedf30f5d10d33be612ddc711a0c86cd6c25c14da068c51e50c3f2dd0bd8e4e49
   languageName: node
   linkType: hard
 
@@ -4567,8 +4616,8 @@ __metadata:
     "@tamagui/font-inter": 1.0.1-beta.115
     "@tamagui/shorthands": 1.0.1-beta.115
     "@tamagui/theme-base": 1.0.1-beta.115
-    expo-linking: ^3.0.0
-    solito: ^0.0.25
+    expo-linking: ^3.1.0
+    solito: ^0.0.26
   languageName: unknown
   linkType: soft
 
@@ -8452,7 +8501,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-constants@npm:~13.1.0, expo-constants@npm:~13.1.1":
+"expo-constants@npm:~13.1.1":
   version: 13.1.1
   resolution: "expo-constants@npm:13.1.1"
   dependencies:
@@ -8461,6 +8510,18 @@ __metadata:
   peerDependencies:
     expo: "*"
   checksum: 2a0be73a2e27854bbb398b89868141784c29455b3041f00b0a4209fb2a5d2ecb36aa17d5c06c005a1ec0df8652641446eec74dffb3d0eb2c4245e7e04a90897f
+  languageName: node
+  linkType: hard
+
+"expo-constants@npm:~13.2.0":
+  version: 13.2.2
+  resolution: "expo-constants@npm:13.2.2"
+  dependencies:
+    "@expo/config": ~7.0.0
+    uuid: ^3.3.2
+  peerDependencies:
+    expo: "*"
+  checksum: 2cd3b04b2c726c5a1cdfefdef4ff39fa7e3be9850c91d9b42f92d9073248a7538c3b49b600ddecf07abdb92b54ad1c220faef79bc5a65581e17d919a2ad11d1f
   languageName: node
   linkType: hard
 
@@ -8514,15 +8575,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-linking@npm:^3.0.0":
-  version: 3.1.0
-  resolution: "expo-linking@npm:3.1.0"
+"expo-linking@npm:^3.1.0":
+  version: 3.2.1
+  resolution: "expo-linking@npm:3.2.1"
   dependencies:
-    expo-constants: ~13.1.0
+    expo-constants: ~13.2.0
     invariant: ^2.2.4
     qs: ^6.9.1
     url-parse: ^1.5.9
-  checksum: 0469e0dd428eae5c228ef7afadb6636bc179a15f578a7aca0fbb1561b1bef52f6de550bc257c7db4887324ae456d1ccfffc9cb2dddb5fe633bfd214808892b72
+  checksum: cc0961382fa7b5ca57182e395cf1103aed4868b9038b01235edf55f15f1ecd1afc0ee04ccb8ccd4f9f14c6d80e32af5fc0f5356cd91c63f64155e5432e639241
   languageName: node
   linkType: hard
 
@@ -16249,10 +16310,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"solito@npm:^0.0.25":
-  version: 0.0.25
-  resolution: "solito@npm:0.0.25"
-  checksum: 200eaacbc553be10e73af2d195868efc3a0e477628a1fcbe26f22e3dcacf4c6b742ce81ed7aa23fd5106812c0d9210db369e0fba1720f1f39ab3ae63e7f5e6b1
+"solito@npm:^0.0.26":
+  version: 0.0.26
+  resolution: "solito@npm:0.0.26"
+  checksum: c3cbee8e33bd9849d85bbe3e1c9d862eca06b17a2b76cd9d856d39cea01755faad92a2cfe37c77a8419ca8efa133b93935034996a3bc14522c270cb727a297d0
   languageName: node
   linkType: hard
 
