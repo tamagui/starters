@@ -9,6 +9,7 @@
   "scripts": {
     "native": "yarn build && cd expo && yarn start",
     "web": "yarn build && cd next && yarn next",
+    "web:prod": "yarn workspace next-app build",
     "watch": "yarn workspaces foreach -pi run watch",
     "postinstall": "yarn build",
     "build": "yarn workspaces foreach --exclude next-app -pi run build",
