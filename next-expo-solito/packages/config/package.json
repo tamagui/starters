@@ -3,10 +3,10 @@
   "name": "@my/config",
   "main": "tamagui.config.ts",
   "dependencies": {
-    "@tamagui/animations-reanimated": "1.0.1-beta.125",
-    "@tamagui/font-inter": "1.0.1-beta.125",
-    "@tamagui/shorthands": "1.0.1-beta.125",
-    "@tamagui/theme-base": "1.0.1-beta.125"
+    "@tamagui/animations-reanimated": "1.0.1-beta.130",
+    "@tamagui/font-inter": "1.0.1-beta.130",
+    "@tamagui/shorthands": "1.0.1-beta.130",
+    "@tamagui/theme-base": "1.0.1-beta.130"
   },
   "sideEffects": false
 }
