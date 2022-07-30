@@ -1,6 +1,12 @@
 /node_modules
-.yarn/cache/*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
+# expo
 **/.expo/*
 
 # next.js
@@ -27,3 +33,8 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# os
+.DS_Store
+THUMBS_DB
+thumbs.db
