@@ -3,7 +3,8 @@ module.exports = function (api) {
   return {
     presets: [['babel-preset-expo', { jsxRuntime: 'automatic' }]],
     plugins: [
-      'react-native-reanimated/plugin',
+      // if you want reanimated support
+      // 'react-native-reanimated/plugin',
       [
         '@tamagui/babel-plugin',
         {
@@ -11,9 +12,12 @@ module.exports = function (api) {
           config: './tamagui.config.ts',
         },
       ],
-      ['transform-inline-environment-variables', {
-        include: 'TAMAGUI_TARGET'
-      }]
+      [
+        'transform-inline-environment-variables',
+        {
+          include: 'TAMAGUI_TARGET',
+        },
+      ],
     ],
   }
 }
